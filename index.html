@@ -1,44 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Programação</title>
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Bem-vindo à Página de Programação</h1>
-    </header>
-    <section>
-        <div>
-            <h2>Formulário de Cadastro</h2>
-            <form>
-                <div>
-                    <label for="texto">Digite seu nome:</label>
-                    <input type="text" id="texto" required>
-                </div>
+<body class="h-100">
+    <div class="d-flex flex-column min-vh-100">
+        <header class="bg-dark text-white text-center py-4 container-fluid">
+            <h1>Bem-vindo ào formulário do Marllon</h1>
+        </header>
+        <section class="container fluid">
+            <div>
+                <h2 class="text-center">Formulário de Cadastro</h2><br>
+                <form>
+                    <div class="form-group">
+                        <label class="text-center" for="texto">Digite seu nome:</label>
+                        <input type="text" class="form-control" id="texto" required>
+                    </div>
 
-                <div>
-                    <label for="email">Digite seu e-mail:</label>
-                    <input type="email" id="email" required>
-                </div>
+                    <div class="form-group">
+                        <label class="text-center" for="email">Digite seu e-mail:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
 
-                <div>
-                    <label for="senha">Digite sua senha:</label>
-                    <input type="password" id="senha" required>
-                </div>
+                    <div class="form-group">
+                        <label class="text-center" for="senha">Digite sua senha:</label>
+                        <input type="password" class="form-control" id="senha" required>
+                    </div>
 
-                <div>
-                    <input type="submit" value="Cadastrar">
-                    <input type="reset" value="Limpar">
-                </div>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2023 Página de Programação. Todos os direitos reservados.</p>
-    </footer>
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-primary" value="Cadastrar">
+                        <input type="reset" class="btn btn-secondary" value="Limpar">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="bg-dark text-white text-center py-3 mt-auto">
+            <p>&copy; 2023 mLLn Dev. Todos os direitos reservados.</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
